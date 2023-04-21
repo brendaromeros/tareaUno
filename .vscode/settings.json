@@ -79,5 +79,6 @@
     "stdexcept": "cpp",
     "streambuf": "cpp",
     "typeinfo": "cpp"
-  }
+  },
+  "doxygen_runner.doxygen_command": "C:\\Users\\usuario\\Documents\\Estructuras de datos\\Repositorio\\i2023-ie2017\\tareaUno\\.codedocs"
 }
