@@ -1,0 +1,14 @@
+{
+  "pages": [
+    {
+      "name": "Documentación",
+      "description": "Documentación del proyecto",
+      "files": [
+        {
+          "source": "html/index.html",
+          "destination": "index.html"
+        }
+      ]
+    }
+  ]
+}
