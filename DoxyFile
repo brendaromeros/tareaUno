@@ -1,0 +1,55 @@
+# Doxyfile
+
+# Especifica la versión de Doxygen a utilizar
+DOXYFILE_ENCODING      = UTF-8
+DOXYGEN_VERSION        = 1.9.1
+
+# Configuración general
+PROJECT_NAME           = tareaUno
+PROJECT_NUMBER         = 1.0
+OUTPUT_DIRECTORY       = html
+OUTPUT_LANGUAGE        = English
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+ABBREVIATE_BRIEF       = "The $name class" \
+                         "The $name widget" \
+                         "The $name file" \
+                         is \
+                         provides \
+                         specifies \
+                         contains \
+                         represents \
+                         a \
+                         an \
+                         the
+ALWAYS_DETAILED_SEC    = YES
+INLINE_INHERITED_MEMB  = YES
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        = 
+STRIP_FROM_INC_PATH    = 
+
+# Configuración de GitHub
+ENABLED_SECTIONS       = * 
+GENERATE_TREEVIEW      = YES
+REPOSITORY_URL         = https://github.com/brendaromeros/tareaUno.git
+FILTER_SOURCE_FILES    = NO
+INPUT                  = 
+FILE_PATTERNS          = *.h *.cpp
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+
+# Especifica el tema a utilizar
+HTML_THEME             = default
+
+# Incluye la documentación de los archivos internos
+INTERNAL_DOCS          = YES
+
+# Genera los archivos necesarios para utilizar el estilo CSS
+HTML_EXTRA_STYLESHEET  = mystyle.css
+HTML_STYLESHEET        = default.css
+HTML_HEADER            = header.html
+HTML_FOOTER            = footer.html
+
+# Incluye la fecha y hora de generación en el archivo HTML
+GENERATE_TIMESTAMP     = YES
