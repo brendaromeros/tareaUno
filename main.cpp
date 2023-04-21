@@ -27,45 +27,11 @@
  * THE SOFTWARE.
  * 
  */
-#include <iostream>
-#include "Classroom.hpp"
-#include "Parking.hpp"
-#include "Faculty.hpp"
-#include "Estate.hpp"
-#include "Campus.hpp"
-
+#include "main.hpp"
 
 
 using namespace std;
 
-/**
- * @brief This method show all the information in a Campus object. 
- * 
- * @param campus Campus of a university.
- */
-void showAllInformation(Campus campus){
-    cout <<"Campus: "<<campus.getName()<< " it has "<< campus.getMaxIndexEstates()+1<< " estates, ";
-
-    for(int i =0; i<=campus.getMaxIndexEstates();i++){
-        if (i< campus.getMaxIndexEstates()){
-            cout << campus.estates[i].getName()<< ", ";
-
-        }else if (i==campus.getMaxIndexEstates()){
-            cout << campus.estates[i].getName()<< "."<<endl;
-
-        }else{
-            cout << campus.estates[i].getName()<< " and ";
-
-        }
-    }
-    campus.busRoute();
-    for(int i =0; i<=campus.getMaxIndexEstates();i++){
-        campus.estates[i].show();
-    }
-    for(int i =0; i<=campus.getMaxIndexEstates();i++){
-        campus.estates[i].showBuildings();
-    }
-}
 /**
  * @brief Principal funtion that make the objects to save and shows the information.
  * 
@@ -73,26 +39,26 @@ void showAllInformation(Campus campus){
  */
 int main(){
     Campus q("fshf");
-    Classroom c(45,34,HAS_ELEVATOR);
+    Classroom c(q.createIdentifier(),34,HAS_ELEVATOR);
     Parking p ("Parqueo mariposa",HAS_ELEVATOR);
     Faculty f ("electrica",DOES_NOT_HAVE_ELEVATOR,HAS_Cafeteria);
     f.addClassroom(c,"fifth");
-    Classroom c3(454443,27,DOES_NOT_HAVE_ELEVATOR);
+    Classroom c3(q.createIdentifier(),27,DOES_NOT_HAVE_ELEVATOR);
     f.addClassroom(c3,"first");
-    Classroom cr(4543,37,DOES_NOT_HAVE_ELEVATOR);
+    Classroom cr(q.createIdentifier(),37,DOES_NOT_HAVE_ELEVATOR);
     Estate e ("Finca Uno",INTERNAL_BUS_PASS);
     f.addClassroom(cr,"fifth");
     e.addFaculty(f);
     e.addParking(p);
 
 
-    Classroom r(454624,44,HAS_ELEVATOR);
+    Classroom r(q.createIdentifier(),44,HAS_ELEVATOR);
     Parking pe ("Parqueo mariposa",HAS_ELEVATOR);
     Faculty fe ("electrica",DOES_NOT_HAVE_ELEVATOR,HAS_Cafeteria);
     fe.addClassroom(r,"fifth");
-    Classroom c4(454443,27,DOES_NOT_HAVE_ELEVATOR);
+    Classroom c4(q.createIdentifier(),27,DOES_NOT_HAVE_ELEVATOR);
     fe.addClassroom(c4,"first");
-    Classroom c7(4543,37,DOES_NOT_HAVE_ELEVATOR);
+    Classroom c7(q.createIdentifier(),37,DOES_NOT_HAVE_ELEVATOR);
     Estate er ("Finca Dos",INTERNAL_BUS_DOES_NOT_PASS);
     f.addClassroom(cr,"fifth");
     er.addParking(pe);
@@ -104,6 +70,5 @@ int main(){
     q.addEstate(er);
 
     showAllInformation(q);
-    
     return 0;
 }

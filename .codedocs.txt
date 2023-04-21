@@ -185,3 +185,5 @@ TAGLINKS =
 # USE_MDFILE_AS_MAINPAGE =
 # VERBATIM_HEADERS =
 #
+GENERATE_DOCSET = NO
+HTML_OUTPUT = docs/mydocumentation.codedocs.tx

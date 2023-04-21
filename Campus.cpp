@@ -32,6 +32,7 @@
  */
 #include "Campus.hpp"
 #include <iostream>
+#include <ctime>
 
 using namespace std;
 
@@ -101,3 +102,28 @@ Campus :: Campus(string title){
     string Campus :: getName() const{
         return this->name;
     }
+    /**
+         * @brief  This method  creates an original identifier for a classroom.
+         * 
+         * @return int Identifier for a classroom
+         */
+        int Campus :: createIdentifier(){
+            bool condition=CONTINUE; ///< Condition to stop the loop.
+            int identifier;          ///< A new identifier.
+            while(condition){
+                identifier= rand() % BIGGEST_IDENTIFIER;
+                condition=END;
+                if (not this->used.empty()){
+                    
+                    for (const auto& number : this->used) {
+                        if (number==identifier){
+                            condition=CONTINUE;
+                            break;
+                        }
+                    }
+                }
+                
+            }
+            this->used.push_back(identifier);
+            return identifier;
+        };

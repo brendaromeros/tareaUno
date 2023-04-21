@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/usuario/Documents/Estructuras de datos/temp",
-      "program": "c:/Users/usuario/Documents/Estructuras de datos/temp/build/Debug/outDebug",
+      "cwd": "c:/Users/usuario/Documents/Estructuras de datos/Repositorio/i2023-ie2017/tareaUno",
+      "program": "c:/Users/usuario/Documents/Estructuras de datos/Repositorio/i2023-ie2017/tareaUno/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

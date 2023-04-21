@@ -43,7 +43,10 @@ using namespace std;
  * @brief Enumeration for the options to use in the file.
  */
 enum optionsCampus{
-    TOTAL_ESTATES=5  /**< Total admit estates*/
+    TOTAL_ESTATES=5,                /**< Total admit estates*/
+    END=0,                          /**< Condition to end a loop*/
+    CONTINUE=1,                     /**< Condition to continue a loop*/
+    BIGGEST_IDENTIFIER= 99999999    /**< Biggest identifier for a class*/
 };
 
 /**
@@ -97,6 +100,13 @@ class Campus{
          * 
          */   
         void busRoute();
+        
+        /**
+         * @brief To declare method that add a new identifier for a classroom.
+         * 
+         * @return int Original identifier.
+         */
+        int createIdentifier();
 
 };
 #endif //Campus.hpp
