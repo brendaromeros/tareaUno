@@ -42,7 +42,7 @@ using namespace std;
  * This constructor creates an object of the Campus class
  * with the corresponding parameter.
  * 
- * @param title Name of the campus.
+ * @param name Name of the campus.
  */
 Campus :: Campus(string title){
     this->name=title;
