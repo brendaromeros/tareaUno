@@ -1,8 +1,7 @@
 /**
  * @file main.hpp
  * @author Brenda Romero Solano (brenda.romero@ucr.ac.cr)
- * @brief Declaration of the funtion that prints all the information of a campus object.
- * 
+ * @brief Declaration of the funtion that prints all the information of a Campus class.
  * @version 0.1
  * @date 2023-04-21
  * 
