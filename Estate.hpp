@@ -35,9 +35,12 @@
 
 using namespace std;
 
+/**
+ * @brief Enumeration for the options to use in the file.
+ */
 enum optionsEstate{
-    INTERNAL_BUS_DOES_NOT_PASS=0,
-    INTERNAL_BUS_PASS=1
+    INTERNAL_BUS_DOES_NOT_PASS=0, /**< The internal bus doesn't pass through. */
+    INTERNAL_BUS_PASS=1           /**< The internal bus pass through. */
 };
 
 /**
